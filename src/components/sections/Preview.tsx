@@ -7,22 +7,22 @@ export const Preview = () => {
   
   const pages = [
     {
-      title: "Introduction à l'Alchimie Culinaire",
-      content: "Découvrez les secrets fondamentaux qui transforment la pâtisserie traditionnelle en art alchimique. Cette méthode révolutionnaire vous permettra de créer des gâteaux d'une stabilité parfaite.",
-      image: "Première page avec introduction élégante",
-      preview: "Chapter 1: Les Bases de l'Alchimie Pâtissière"
+      title: "Cake Design #1: Élégance Chocolat-Framboises",
+      content: "Découvrez cette création spectaculaire alliant ganache chocolat noir intense et coulis de framboises acidulé. Une recette précise avec tous les secrets pour une tenue parfaite et un goût inoubliable.",
+      image: "Recette complète avec photos du processus de montage",
+      preview: "Recette 1/10: Cake Design Professionnel"
     },
     {
-      title: "Recette Signature: Le Phoenix Doré",
-      content: "Technique exclusive: comment maîtriser les températures et les textures pour obtenir un cake moelleux qui conserve sa forme pendant des jours. Timing précis et astuces professionnelles inclus.",
-      image: "Page recette avec photos étape par étape", 
-      preview: "Recette complète avec illustrations détaillées"
+      title: "Cake Design #5: Vanille-Caramel Sculptural",
+      content: "Maîtrisez l'art du cake design avec cette création en 3 étages. Génoise vanille, crème caramel beurre salé et glaçage miroir. Technique de sculpture et stabilité garanties.",
+      image: "Étapes détaillées du montage et décoration", 
+      preview: "Recette 5/10: Techniques de Sculpture"
     },
     {
-      title: "Secrets des Maîtres Pâtissiers",
-      content: "Les techniques gardées secrètes par les grands chefs révélées pour la première fois. Apprenez les gestes précis qui font la différence entre un gâteau ordinaire et une création exceptionnelle.",
-      image: "Page technique avec schémas détaillés",
-      preview: "Techniques professionnelles expliquées simplement"
+      title: "Cake Design #10: Création Signature",
+      content: "La recette finale qui combine toutes les techniques apprises. Un chef-d'œuvre visuel et gustatif qui impressionnera vos clients les plus exigeants. Secret de conservation inclus.",
+      image: "Résultat final avec astuces de présentation",
+      preview: "Recette 10/10: Votre Signature"
     }
   ]
 
