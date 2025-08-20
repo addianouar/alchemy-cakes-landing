@@ -36,18 +36,18 @@ export const Features = () => {
   ]
 
   return (
-    <section className="py-20 bg-luxury-dark">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center space-y-6 mb-16 animate-fade-in-up">
-          <p className="text-luxury-gold font-inter font-medium tracking-wider uppercase text-sm">
-            Points Clés
+          <p className="text-rose-600 font-inter font-medium tracking-wider uppercase text-sm">
+            ⚡ Caractéristiques principales
           </p>
-          <h2 className="font-playfair text-3xl md:text-5xl font-bold text-luxury-light leading-tight">
-            Pourquoi Choisir <span className="text-luxury-gold">Cette Collection</span>
+          <h2 className="font-playfair text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Ce qui rend ce livre <span className="text-rose-600">unique</span>
           </h2>
-          <p className="text-luxury-light/80 text-lg font-inter leading-relaxed max-w-3xl mx-auto">
-            Un guide essentiel pour tous ceux qui souhaitent créer des cakes qui impressionnent 
-            et tiennent impeccablement, avec des techniques révolutionnaires.
+          <p className="text-gray-700 text-lg font-inter leading-relaxed max-w-3xl mx-auto">
+            Découvrez pourquoi "Alchemical Cakes Volume 1" est devenu la référence 
+            incontournable des professionnels et passionnés de pâtisserie.
           </p>
         </div>
         
@@ -55,19 +55,21 @@ export const Features = () => {
           {features.map((feature, index) => (
             <Card 
               key={index}
-              className="bg-luxury-dark-lighter border-luxury-gold/20 p-8 hover:border-luxury-gold/40 hover:bg-luxury-dark-lightest transition-smooth group animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="bg-white border-rose-200 p-8 text-center hover:shadow-xl hover:shadow-rose-100/30 transition-all duration-300 animate-scale-in"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="space-y-4">
-                <div className="bg-luxury-gold/20 p-4 rounded-xl w-fit group-hover:bg-luxury-gold/30 transition-smooth">
-                  <feature.icon className="text-luxury-gold" size={32} />
+              <div className="space-y-6">
+                <div className="bg-rose-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+                  <feature.icon className="text-rose-600" size={32} />
                 </div>
-                <h3 className="font-playfair text-xl font-semibold text-luxury-light">
-                  {feature.title}
-                </h3>
-                <p className="text-luxury-light/70 font-inter leading-relaxed">
-                  {feature.description}
-                </p>
+                <div className="space-y-3">
+                  <h3 className="font-playfair text-xl font-semibold text-gray-900">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 font-inter leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
             </Card>
           ))}

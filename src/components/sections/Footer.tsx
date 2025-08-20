@@ -15,16 +15,16 @@ export const Footer = () => {
   }
 
   return (
-    <footer className="py-20 bg-luxury-dark border-t border-luxury-gold/20">
+    <footer className="bg-gray-100 border-t border-rose-200 py-20">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Contact Info */}
           <div className="space-y-6 animate-fade-in-up">
             <div className="space-y-4">
-              <h3 className="font-playfair text-2xl md:text-3xl font-bold text-luxury-light">
-                Restons en <span className="text-luxury-gold">Contact</span>
+              <h3 className="font-playfair text-2xl md:text-3xl font-bold text-gray-900">
+                Restons en <span className="text-rose-600">Contact</span>
               </h3>
-              <p className="text-luxury-light/80 font-inter leading-relaxed">
+              <p className="text-gray-700 font-inter leading-relaxed">
                 Vous avez des questions sur nos ebooks ou souhaitez découvrir 
                 les prochains volumes de la collection ? N'hésitez pas à nous contacter.
               </p>
@@ -32,9 +32,9 @@ export const Footer = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <LuxuryButton 
-                variant="whatsapp" 
+                variant="primary" 
                 onClick={handleWhatsAppContact}
-                className="flex-1"
+                className="flex-1 bg-rose-600 hover:bg-rose-700 text-white"
               >
                 <MessageCircle className="mr-2" size={18} />
                 WhatsApp
@@ -42,7 +42,7 @@ export const Footer = () => {
               <LuxuryButton 
                 variant="outline" 
                 onClick={handleEmailContact}
-                className="flex-1"
+                className="flex-1 border-rose-600 text-rose-600 hover:bg-rose-50"
               >
                 <Mail className="mr-2" size={18} />
                 Email
@@ -51,13 +51,13 @@ export const Footer = () => {
           </div>
           
           {/* Newsletter */}
-          <Card className="bg-luxury-dark-lighter border-luxury-gold/20 p-8 animate-scale-in" style={{ animationDelay: '0.2s' }}>
+          <Card className="bg-white border-rose-200 p-8 animate-scale-in" style={{ animationDelay: '0.2s' }}>
             <div className="space-y-6">
               <div className="text-center space-y-3">
-                <h4 className="font-playfair text-xl font-semibold text-luxury-light">
+                <h4 className="font-playfair text-xl font-semibold text-gray-900">
                   Newsletter Exclusive
                 </h4>
-                <p className="text-luxury-light/80 font-inter text-sm">
+                <p className="text-gray-600 font-inter text-sm">
                   Recevez en avant-première nos nouvelles recettes et techniques secrètes
                 </p>
               </div>
@@ -66,14 +66,14 @@ export const Footer = () => {
                 <input 
                   type="email" 
                   placeholder="Votre adresse email"
-                  className="w-full px-4 py-3 bg-luxury-dark-lightest border border-luxury-gold/20 rounded-lg text-luxury-light placeholder:text-luxury-light/50 focus:outline-none focus:border-luxury-gold transition-smooth"
+                  className="w-full px-4 py-3 bg-gray-50 border border-rose-200 rounded-lg text-gray-900 placeholder:text-gray-500 focus:outline-none focus:border-rose-500 transition-all duration-300"
                 />
-                <LuxuryButton variant="primary" size="lg" className="w-full">
+                <LuxuryButton variant="primary" size="lg" className="w-full bg-rose-600 hover:bg-rose-700 text-white">
                   S'inscrire Gratuitement
                 </LuxuryButton>
               </div>
               
-              <p className="text-luxury-light/60 font-inter text-xs text-center">
+              <p className="text-gray-500 font-inter text-xs text-center">
                 Pas de spam, uniquement du contenu de qualité. Désabonnement facile.
               </p>
             </div>
@@ -81,19 +81,19 @@ export const Footer = () => {
         </div>
         
         {/* Social Links & Copyright */}
-        <div className="border-t border-luxury-gold/20 pt-8">
+        <div className="border-t border-rose-200 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Social Links */}
             <div className="flex items-center gap-4">
-              <span className="text-luxury-light/70 font-inter text-sm">Suivez-nous :</span>
+              <span className="text-gray-600 font-inter text-sm">Suivez-nous :</span>
               <div className="flex gap-3">
-                <button className="bg-luxury-dark-lighter border border-luxury-gold/20 p-2 rounded-lg text-luxury-gold hover:bg-luxury-gold hover:text-luxury-dark transition-smooth">
+                <button className="bg-white border border-rose-200 p-2 rounded-lg text-rose-600 hover:bg-rose-600 hover:text-white transition-all duration-300">
                   <Instagram size={18} />
                 </button>
-                <button className="bg-luxury-dark-lighter border border-luxury-gold/20 p-2 rounded-lg text-luxury-gold hover:bg-luxury-gold hover:text-luxury-dark transition-smooth">
+                <button className="bg-white border border-rose-200 p-2 rounded-lg text-rose-600 hover:bg-rose-600 hover:text-white transition-all duration-300">
                   <Facebook size={18} />
                 </button>
-                <button className="bg-luxury-dark-lighter border border-luxury-gold/20 p-2 rounded-lg text-luxury-gold hover:bg-luxury-gold hover:text-luxury-dark transition-smooth">
+                <button className="bg-white border border-rose-200 p-2 rounded-lg text-rose-600 hover:bg-rose-600 hover:text-white transition-all duration-300">
                   <Twitter size={18} />
                 </button>
               </div>
@@ -101,10 +101,10 @@ export const Footer = () => {
             
             {/* Copyright */}
             <div className="text-center md:text-right">
-              <p className="text-luxury-light/60 font-inter text-sm">
+              <p className="text-gray-600 font-inter text-sm">
                 © {currentYear} Sara Alöwe. Tous droits réservés.
               </p>
-              <p className="text-luxury-light/50 font-inter text-xs mt-1">
+              <p className="text-gray-500 font-inter text-xs mt-1">
                 Conception & Développement par l'équipe Sara Alöwe
               </p>
             </div>
