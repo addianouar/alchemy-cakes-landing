@@ -56,12 +56,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'luxury-gold': 'hsl(var(--luxury-gold))',
-				'luxury-gold-muted': 'hsl(var(--luxury-gold-muted))',
-				'luxury-dark': 'hsl(var(--luxury-dark))',
-				'luxury-dark-lighter': 'hsl(var(--luxury-dark-lighter))',
-				'luxury-dark-lightest': 'hsl(var(--luxury-dark-lightest))',
-				'luxury-light': 'hsl(var(--luxury-light))',
+				// New luxury color palette
+				"luxury-primary": "hsl(var(--luxury-primary))",
+				"luxury-secondary": "hsl(var(--luxury-secondary))",
+				"luxury-light-bg": "hsl(var(--luxury-light-bg))",
+				"luxury-neutral": "hsl(var(--luxury-neutral))",
+				"luxury-muted": "hsl(var(--luxury-muted))",
+				"luxury-dark": "hsl(var(--luxury-dark))",
+				"luxury-accent": "hsl(var(--luxury-accent))",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
