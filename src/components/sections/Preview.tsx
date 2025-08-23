@@ -67,38 +67,37 @@ export const Preview = () => {
   }, [isPaused, currentPage])
 
   return (
-    <section className="py-16 lg:py-20 bg-luxury-neutral">
+    <section className="py-16 lg:py-20 bg-gradient-section">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <div className="text-center space-y-4 lg:space-y-6 mb-12 lg:mb-16 animate-fade-in-up">
-          <p className="text-luxury-accent font-inter font-medium tracking-wider uppercase text-sm">
+          <p className="text-luxury-gold font-inter font-medium tracking-wider uppercase text-sm">
             📖 Aperçu du Livre
           </p>
-          <h2 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-luxury-dark leading-tight">
-            Contenu <span className="text-luxury-primary">Exclusif</span>
+          <h2 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-luxury-light leading-tight">
+            Contenu <span className="text-luxury-gold">Exclusif</span>
           </h2>
-          <p className="text-luxury-muted text-base sm:text-lg font-inter leading-relaxed max-w-3xl mx-auto">
+          <p className="text-luxury-light/80 text-base sm:text-lg font-inter leading-relaxed max-w-3xl mx-auto">
             Un aperçu exclusif de ce qui vous attend : des recettes illustrées pas à pas, 
             des techniques expliquées clairement, et des secrets de pâtisserie jamais révélés.
           </p>
         </div>
-        
         {/* Recipe Carousel */}
         <div className="max-w-5xl mx-auto">
           <div className="relative">
             {/* Carousel Card */}
-            <Card className="bg-white border-luxury-primary/20 shadow-luxury overflow-hidden">
+            <Card className="bg-luxury-dark-lighter border-luxury-gold/20 shadow-luxury overflow-hidden">
               <div className="relative">
                 {/* Navigation Buttons */}
                 <button 
                   onClick={prevRecipe}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-luxury-primary text-white rounded-full flex items-center justify-center hover:bg-luxury-secondary transition-colors duration-300 shadow-lg"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-luxury-accent text-white rounded-full flex items-center justify-center hover:bg-luxury-accent/80 transition-colors duration-300 shadow-lg"
                 >
                   <ChevronLeft size={24} />
                 </button>
                 
                 <button 
                   onClick={nextRecipe}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-luxury-primary text-white rounded-full flex items-center justify-center hover:bg-luxury-secondary transition-colors duration-300 shadow-lg"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-luxury-accent text-white rounded-full flex items-center justify-center hover:bg-luxury-accent/80 transition-colors duration-300 shadow-lg"
                 >
                   <ChevronRight size={24} />
                 </button>
@@ -106,7 +105,7 @@ export const Preview = () => {
                 {/* Play/Pause Button */}
                 <button 
                   onClick={togglePause}
-                  className="absolute top-4 right-4 z-10 w-10 h-10 bg-luxury-accent text-white rounded-full flex items-center justify-center hover:bg-luxury-accent/90 transition-colors duration-300"
+                  className="absolute top-4 right-4 z-10 w-10 h-10 bg-luxury-gold text-luxury-dark rounded-full flex items-center justify-center hover:bg-luxury-gold/90 transition-colors duration-300"
                 >
                   {isPaused ? <Play size={16} /> : <Pause size={16} />}
                 </button>
@@ -115,19 +114,19 @@ export const Preview = () => {
                 <div className="p-8 lg:p-12">
                   <div className="text-center space-y-6">
                     {/* Recipe Icon */}
-                    <div className="w-24 h-24 mx-auto bg-luxury-light-bg rounded-full flex items-center justify-center text-4xl">
+                    <div className="w-24 h-24 mx-auto bg-luxury-gold/10 rounded-full flex items-center justify-center text-4xl">
                       {recipes[currentPage].image}
                     </div>
                     
                     {/* Recipe Info */}
                     <div>
-                      <p className="text-luxury-accent font-inter font-medium tracking-wider uppercase text-sm mb-2">
+                      <p className="text-luxury-gold font-inter font-medium tracking-wider uppercase text-sm mb-2">
                         {recipes[currentPage].preview}
                       </p>
-                      <h3 className="font-playfair text-2xl lg:text-3xl font-bold text-luxury-dark mb-4">
+                      <h3 className="font-playfair text-2xl lg:text-3xl font-bold text-luxury-light mb-4">
                         {recipes[currentPage].title}
                       </h3>
-                      <p className="text-luxury-muted font-inter text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
+                      <p className="text-luxury-light/80 font-inter text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
                         {recipes[currentPage].content}
                       </p>
                     </div>
@@ -140,8 +139,8 @@ export const Preview = () => {
                           onClick={() => setCurrentPage(index)}
                           className={`w-3 h-3 rounded-full transition-all duration-300 ${
                             currentPage === index 
-                              ? 'bg-luxury-primary scale-125' 
-                              : 'bg-luxury-primary/30 hover:bg-luxury-primary/50'
+                              ? 'bg-luxury-gold scale-125' 
+                              : 'bg-luxury-gold/30 hover:bg-luxury-gold/50'
                           }`}
                         />
                       ))}
@@ -153,30 +152,30 @@ export const Preview = () => {
 
             {/* Recipe Result Image */}
             <div className="mt-8">
-              <Card className="bg-luxury-light-bg border-luxury-accent/20">
+              <Card className="bg-luxury-dark-lighter border-luxury-accent/20">
                 <div className="p-6 lg:p-8">
                   <div className="text-center space-y-4">
                     <div className="flex items-center justify-center gap-3 mb-4">
-                      <Eye className="text-luxury-accent" size={20} />
-                      <h4 className="font-playfair text-lg lg:text-xl font-semibold text-luxury-dark">
+                      <Eye className="text-luxury-gold" size={20} />
+                      <h4 className="font-playfair text-lg lg:text-xl font-semibold text-luxury-light">
                         Résultat Final
                       </h4>
                     </div>
                     
                     {/* Visual representation of the recipe result */}
-                    <div className="w-full h-40 lg:h-48 bg-luxury-neutral rounded-xl flex items-center justify-center border-2 border-luxury-accent/20">
+                    <div className="w-full h-40 lg:h-48 bg-luxury-dark rounded-xl flex items-center justify-center border-2 border-luxury-accent/20">
                       <div className="text-center space-y-2">
                         <div className="text-6xl lg:text-7xl">
                           {recipes[currentPage].image}
                         </div>
-                        <p className="text-luxury-muted font-inter text-sm lg:text-base font-medium">
+                        <p className="text-luxury-light/70 font-inter text-sm lg:text-base font-medium">
                           {recipes[currentPage].result}
                         </p>
                       </div>
                     </div>
                     
                     <div className="bg-luxury-accent/10 rounded-lg p-4">
-                      <p className="text-luxury-dark font-inter text-sm lg:text-base">
+                      <p className="text-luxury-light font-inter text-sm lg:text-base">
                         💡 <strong>Astuce Pro:</strong> Chaque recette inclut des photos étape par étape 
                         et des conseils exclusifs pour un résultat professionnel garanti.
                       </p>

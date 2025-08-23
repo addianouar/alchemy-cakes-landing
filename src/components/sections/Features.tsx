@@ -46,16 +46,16 @@ export const Features = () => {
   ]
 
   return (
-    <section className="py-16 lg:py-20 bg-luxury-light-bg">
+    <section className="py-16 lg:py-20 bg-luxury-dark-lighter">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <div className="text-center space-y-4 lg:space-y-6 mb-12 lg:mb-16 animate-fade-in-up">
-          <p className="text-luxury-accent font-inter font-medium tracking-wider uppercase text-sm">
+          <p className="text-luxury-gold font-inter font-medium tracking-wider uppercase text-sm">
             ✨ Points Forts
           </p>
-          <h2 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-luxury-dark leading-tight">
-            Ce qui Rend ce Livre <span className="text-luxury-primary">Unique</span>
+          <h2 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-luxury-light leading-tight">
+            Ce qui Rend ce Livre <span className="text-luxury-gold">Unique</span>
           </h2>
-          <p className="text-luxury-muted text-base sm:text-lg font-inter leading-relaxed max-w-3xl mx-auto">
+          <p className="text-luxury-light/80 text-base sm:text-lg font-inter leading-relaxed max-w-3xl mx-auto">
             Découvrez pourquoi des milliers de passionnés ont choisi ce guide 
             pour transformer leur passion en véritable expertise.
           </p>
@@ -66,18 +66,18 @@ export const Features = () => {
             {features.map((feature, index) => (
               <Card 
                 key={index} 
-                className="bg-white border-luxury-primary/10 shadow-card hover:shadow-luxury transition-all duration-300 hover:-translate-y-2 group"
+                className="bg-luxury-dark border-luxury-gold/10 shadow-card hover:shadow-luxury transition-all duration-300 hover:-translate-y-2 group"
               >
                 <div className="p-4 lg:p-6 text-center space-y-3 lg:space-y-4">
-                  <div className="w-12 h-12 lg:w-14 lg:h-14 mx-auto bg-luxury-light-bg rounded-full flex items-center justify-center group-hover:bg-luxury-primary group-hover:text-white transition-all duration-300">
+                  <div className="w-12 h-12 lg:w-14 lg:h-14 mx-auto bg-luxury-gold/10 rounded-full flex items-center justify-center group-hover:bg-luxury-accent group-hover:text-white transition-all duration-300">
                     <feature.icon size={20} />
                   </div>
                   
-                  <h3 className="font-playfair text-sm lg:text-base font-bold text-luxury-dark group-hover:text-luxury-primary transition-colors duration-300 line-clamp-2">
+                  <h3 className="font-playfair text-sm lg:text-base font-bold text-luxury-light group-hover:text-luxury-gold transition-colors duration-300 line-clamp-2">
                     {feature.title}
                   </h3>
                   
-                  <p className="text-luxury-muted font-inter text-xs lg:text-sm leading-relaxed line-clamp-3">
+                  <p className="text-luxury-light/70 font-inter text-xs lg:text-sm leading-relaxed line-clamp-3">
                     {feature.description}
                   </p>
                 </div>
@@ -87,7 +87,7 @@ export const Features = () => {
 
           {/* Arabic Version Button */}
           <div className="text-center">
-            <Card className="bg-luxury-primary text-white shadow-luxury max-w-md mx-auto">
+            <Card className="bg-luxury-accent text-white shadow-luxury max-w-md mx-auto">
               <div className="p-6 lg:p-8">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Globe className="w-6 h-6" />
@@ -100,7 +100,7 @@ export const Features = () => {
                 </p>
                 <a 
                   href="#purchase" 
-                  className="inline-flex items-center gap-2 bg-luxury-accent text-luxury-dark px-6 py-3 rounded-lg font-playfair font-bold text-base hover:bg-luxury-accent/90 transition-colors duration-300"
+                  className="inline-flex items-center gap-2 bg-luxury-gold text-luxury-dark px-6 py-3 rounded-lg font-playfair font-bold text-base hover:bg-luxury-gold/90 transition-colors duration-300"
                 >
                   <BookOpen className="w-5 h-5" />
                   طلب النسخة العربية
