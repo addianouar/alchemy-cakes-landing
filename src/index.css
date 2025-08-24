@@ -8,57 +8,61 @@
 
 @layer base {
   :root {
-    /* Dark Luxury Theme */
-    --background: 222 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Luxury Pastry Theme - Dark Backgrounds with Gold & Cream */
+    --background: 158 36% 18%;          /* #1D3C34 - deep forest green */
+    --foreground: 35 43% 93%;           /* #F2EFE8 - cream */
 
-    --card: 222 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 339 60% 25%;                /* #651C32 - dark burgundy */
+    --card-foreground: 35 43% 93%;      /* #F2EFE8 - cream */
 
-    --popover: 222 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 339 60% 25%;             /* #651C32 - dark burgundy */
+    --popover-foreground: 35 43% 93%;   /* #F2EFE8 - cream */
 
-    --primary: 47 96% 53%;
-    --primary-foreground: 26 83% 14%;
+    --primary: 39 63% 47%;              /* #C5912C - gold */
+    --primary-foreground: 339 60% 25%;  /* #651C32 - dark burgundy */
 
-    --secondary: 217 32% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 339 60% 25%;           /* #651C32 - dark burgundy */
+    --secondary-foreground: 35 43% 93%; /* #F2EFE8 - cream */
 
-    --muted: 217 32% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 108 11% 51%;               /* #788E75 - muted green */
+    --muted-foreground: 35 43% 93%;     /* #F2EFE8 - cream */
 
-    --accent: 47 96% 53%;
-    --accent-foreground: 26 83% 14%;
+    --accent: 349 73% 38%;              /* #A6192E - deep red */
+    --accent-foreground: 35 43% 93%;    /* #F2EFE8 - cream */
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 349 73% 38%;         /* #A6192E - deep red */
+    --destructive-foreground: 35 43% 93%; /* #F2EFE8 - cream */
 
-    --border: 217 32% 17%;
-    --input: 217 32% 17%;
-    --ring: 47 96% 53%;
+    --border: 339 60% 25%;              /* #651C32 - dark burgundy */
+    --input: 339 60% 25%;               /* #651C32 - dark burgundy */
+    --ring: 39 63% 47%;                 /* #C5912C - gold */
 
     --radius: 0.75rem;
 
-    /* Custom Luxury Theme Tokens */
-    --luxury-gold: 47 96% 53%;
-    --luxury-gold-muted: 45 93% 58%;
-    --luxury-dark: 222 84% 4.9%;
-    --luxury-dark-lighter: 217 32% 17%;
-    --luxury-dark-lightest: 215 28% 17%;
-    --luxury-light: 210 40% 98%;
-    --luxury-accent: 101 28 50;         /* #651C32 - burgundy accent */
+    /* Custom Luxury Pastry Theme Tokens */
+    --luxury-gold: 39 63% 47%;          /* #C5912C - gold */
+    --luxury-gold-muted: 39 63% 57%;    /* lighter gold */
+    --luxury-dark: 158 36% 18%;         /* #1D3C34 - deep forest green */
+    --luxury-dark-lighter: 339 60% 25%; /* #651C32 - dark burgundy */
+    --luxury-dark-lightest: 339 50% 30%; /* lighter burgundy */
+    --luxury-light: 35 43% 93%;         /* #F2EFE8 - cream */
+    --luxury-accent: 349 73% 38%;       /* #A6192E - deep red */
+    --luxury-pink: 351 45% 90%;         /* #F5DADF - light pink */
+    --luxury-green: 108 11% 51%;        /* #788E75 - muted green */
     
-    /* Gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(47 96% 53% / 0.1), hsl(45 93% 58% / 0.05));
-    --gradient-hero: linear-gradient(135deg, hsl(222 84% 4.9%), hsl(217 32% 17%));
-    --gradient-section: linear-gradient(180deg, hsl(217 32% 17%), hsl(222 84% 4.9%));
+    /* Luxury Gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(39 63% 47% / 0.1), hsl(351 45% 90% / 0.05));
+    --gradient-hero: linear-gradient(135deg, hsl(158 36% 18%), hsl(339 60% 25%));
+    --gradient-section: linear-gradient(180deg, hsl(339 60% 25%), hsl(158 36% 18%));
+    --gradient-gold: linear-gradient(135deg, hsl(39 63% 47%), hsl(39 63% 57%));
     
-    /* Shadows */
-    --shadow-luxury: 0 25px 50px -12px hsl(47 96% 53% / 0.25);
+    /* Luxury Shadows with Gold Glow */
+    --shadow-luxury: 0 25px 50px -12px hsl(39 63% 47% / 0.3);
     --shadow-elegant: 0 20px 40px -12px hsl(0 0% 0% / 0.8);
-    --shadow-card: 0 10px 30px -5px hsl(0 0% 0% / 0.5);
+    --shadow-card: 0 10px 30px -5px hsl(339 60% 25% / 0.5);
+    --shadow-gold-glow: 0 0 30px hsl(39 63% 47% / 0.4);
     
-    /* Animations */
+    /* Smooth Luxury Transitions */
     --transition-luxury: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -205,12 +209,36 @@
     color: hsl(var(--luxury-gold-muted));
   }
   
+  .text-luxury-light {
+    color: hsl(var(--luxury-light));
+  }
+  
+  .text-luxury-pink {
+    color: hsl(var(--luxury-pink));
+  }
+  
+  .text-luxury-green {
+    color: hsl(var(--luxury-green));
+  }
+  
   .bg-luxury-dark {
     background-color: hsl(var(--luxury-dark));
   }
   
   .bg-luxury-dark-lighter {
     background-color: hsl(var(--luxury-dark-lighter));
+  }
+  
+  .bg-luxury-gold {
+    background-color: hsl(var(--luxury-gold));
+  }
+  
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+  
+  .shadow-gold-glow {
+    box-shadow: var(--shadow-gold-glow);
   }
   
   .animate-luxury-float {

@@ -63,6 +63,8 @@ export default {
 				'luxury-dark-lightest': 'hsl(var(--luxury-dark-lightest))',
 				'luxury-light': 'hsl(var(--luxury-light))',
 				'luxury-accent': 'hsl(var(--luxury-accent))',
+				'luxury-pink': 'hsl(var(--luxury-pink))',
+				'luxury-green': 'hsl(var(--luxury-green))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -116,11 +118,11 @@ export default {
 				},
 				'luxury-glow': {
 					'0%, 100%': { 
-						'box-shadow': '0 0 20px hsl(45 100% 70% / 0.3)',
+						'box-shadow': '0 0 20px hsl(39 63% 47% / 0.3)',
 						transform: 'scale(1)'
 					},
 					'50%': { 
-						'box-shadow': '0 0 40px hsl(45 100% 70% / 0.5)',
+						'box-shadow': '0 0 40px hsl(39 63% 47% / 0.5)',
 						transform: 'scale(1.02)'
 					}
 				}
