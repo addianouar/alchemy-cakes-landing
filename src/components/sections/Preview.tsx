@@ -1,6 +1,11 @@
 import { Card } from "@/components/ui/card"
 import { ChevronLeft, ChevronRight, BookOpen, Eye, Play, Pause } from "lucide-react"
 import { useState, useEffect } from "react"
+import recipe1Image from "@/assets/recipe-1-chocolate-raspberry.jpg"
+import recipe2Image from "@/assets/recipe-2-vanilla-caramel.jpg"
+import recipe3Image from "@/assets/recipe-3-signature.jpg"
+import recipe4Image from "@/assets/recipe-4-tropical.jpg"
+import recipe5Image from "@/assets/recipe-5-opera.jpg"
 
 export const Preview = () => {
   const [currentPage, setCurrentPage] = useState(0)
@@ -10,35 +15,40 @@ export const Preview = () => {
     {
       title: "Recette 1: Élégance Chocolat-Framboises",
       content: "Découvrez cette création spectaculaire alliant ganache chocolat noir intense et coulis de framboises acidulé. Une recette précise avec tous les secrets pour une tenue parfaite et un goût inoubliable.",
-      image: "🍰",
+      image: recipe1Image,
+      icon: "🍰",
       preview: "Cake Design Professionnel",
       result: "Gâteau élégant à 3 étages avec décoration florale"
     },
     {
       title: "Recette 2: Vanille-Caramel Sculptural", 
       content: "Maîtrisez l'art du cake design avec cette création en 3 étages. Génoise vanille, crème caramel beurre salé et glaçage miroir. Technique de sculpture et stabilité garanties.",
-      image: "🎂",
+      image: recipe2Image,
+      icon: "🎂",
       preview: "Techniques de Sculpture",
       result: "Cake design architectural avec finitions dorées"
     },
     {
       title: "Recette 3: Création Signature",
       content: "La recette finale qui combine toutes les techniques apprises. Un chef-d'œuvre visuel et gustatif qui impressionnera vos clients les plus exigeants. Secret de conservation inclus.",
-      image: "🧁",
+      image: recipe3Image,
+      icon: "🧁",
       preview: "Votre Signature",
       result: "Chef-d'œuvre personnalisé avec techniques avancées"
     },
     {
       title: "Recette 4: Fruits Exotiques Glacé",
       content: "Une création rafraîchissante qui marie passion, mangue et noix de coco. Mousse légère et croquant tropical pour un résultat époustouflant.",
-      image: "🥥",
+      image: recipe4Image,
+      icon: "🥥",
       preview: "Saveurs Tropicales",
       result: "Entremet glacé aux couleurs vives"
     },
     {
       title: "Recette 5: Opera Moderne",
       content: "Revisitez le classique avec une approche contemporaine. Biscuit joconde, ganache café et glaçage miroir noir pour un résultat sophistiqué.",
-      image: "☕",
+      image: recipe5Image,
+      icon: "☕",
       preview: "Classique Revisité", 
       result: "Opera aux lignes épurées et finition parfaite"
     }
@@ -114,8 +124,8 @@ export const Preview = () => {
                 <div className="p-8 lg:p-12">
                   <div className="text-center space-y-6">
                     {/* Recipe Icon */}
-                    <div className="w-24 h-24 mx-auto bg-luxury-gold/10 rounded-full flex items-center justify-center text-4xl">
-                      {recipes[currentPage].image}
+                    <div className="w-24 h-24 mx-auto bg-luxury-gold/10 rounded-full flex items-center justify-center text-4xl border-2 border-luxury-gold/20">
+                      {recipes[currentPage].icon}
                     </div>
                     
                     {/* Recipe Info */}
@@ -150,33 +160,36 @@ export const Preview = () => {
               </div>
             </Card>
 
-            {/* Recipe Result Image */}
+            {/* Recipe Result Section */}
             <div className="mt-8">
-              <Card className="bg-luxury-dark-lighter border-luxury-accent/20">
+              <Card className="bg-luxury-dark-lighter border-luxury-gold/20 shadow-luxury overflow-hidden">
                 <div className="p-6 lg:p-8">
-                  <div className="text-center space-y-4">
-                    <div className="flex items-center justify-center gap-3 mb-4">
+                  <div className="text-center space-y-6">
+                    <div className="flex items-center justify-center gap-3 mb-6">
                       <Eye className="text-luxury-gold" size={20} />
                       <h4 className="font-playfair text-lg lg:text-xl font-semibold text-luxury-light">
                         Résultat Final
                       </h4>
                     </div>
                     
-                    {/* Visual representation of the recipe result */}
-                    <div className="w-full h-40 lg:h-48 bg-luxury-dark rounded-xl flex items-center justify-center border-2 border-luxury-accent/20">
-                      <div className="text-center space-y-2">
-                        <div className="text-6xl lg:text-7xl">
-                          {recipes[currentPage].image}
-                        </div>
-                        <p className="text-luxury-light/70 font-inter text-sm lg:text-base font-medium">
-                          {recipes[currentPage].result}
-                        </p>
-                      </div>
+                    {/* Recipe Result Image */}
+                    <div className="w-full aspect-[4/3] bg-luxury-dark rounded-xl overflow-hidden border-2 border-luxury-gold/20 shadow-luxury">
+                      <img 
+                        src={recipes[currentPage].image} 
+                        alt={recipes[currentPage].result}
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      />
                     </div>
                     
-                    <div className="bg-luxury-accent/10 rounded-lg p-4">
+                    <div className="mt-4">
+                      <p className="text-luxury-light font-inter text-sm lg:text-base font-medium">
+                        {recipes[currentPage].result}
+                      </p>
+                    </div>
+                    
+                    <div className="bg-luxury-gold/10 rounded-lg p-4 border border-luxury-gold/20">
                       <p className="text-luxury-light font-inter text-sm lg:text-base">
-                        💡 <strong>Astuce Pro:</strong> Chaque recette inclut des photos étape par étape 
+                        💡 <strong className="text-luxury-gold">Astuce Pro:</strong> Chaque recette inclut des photos étape par étape 
                         et des conseils exclusifs pour un résultat professionnel garanti.
                       </p>
                     </div>
