@@ -60,11 +60,9 @@ export default {
 				'luxury-gold-muted': 'hsl(var(--luxury-gold-muted))',
 				'luxury-dark': 'hsl(var(--luxury-dark))',
 				'luxury-dark-lighter': 'hsl(var(--luxury-dark-lighter))',
-				'luxury-dark-lightest': 'hsl(var(--luxury-dark-lightest))',
 				'luxury-light': 'hsl(var(--luxury-light))',
 				'luxury-accent': 'hsl(var(--luxury-accent))',
 				'luxury-pink': 'hsl(var(--luxury-pink))',
-				'luxury-green': 'hsl(var(--luxury-green))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

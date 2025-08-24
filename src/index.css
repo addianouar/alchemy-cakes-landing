@@ -8,67 +8,61 @@
 
 @layer base {
   :root {
-    /* Luxury Pastry Theme - Dark Backgrounds with Gold & Cream */
-    --background: 158 36% 18%;          /* #1D3C34 - deep forest green */
-    --foreground: 35 43% 93%;           /* #F2EFE8 - cream */
+    /* Elegant Pastry Theme - Curated Color Selection */
+    --background: 158 36% 18%;          /* #1D3C34 - deep forest green (main background) */
+    --foreground: 35 43% 93%;           /* #F2EFE8 - cream (main text) */
 
-    --card: 339 60% 25%;                /* #651C32 - dark burgundy */
+    --card: 339 60% 25%;                /* #651C32 - dark burgundy (cards) */
     --card-foreground: 35 43% 93%;      /* #F2EFE8 - cream */
 
     --popover: 339 60% 25%;             /* #651C32 - dark burgundy */
     --popover-foreground: 35 43% 93%;   /* #F2EFE8 - cream */
 
-    --primary: 39 63% 47%;              /* #C5912C - gold */
-    --primary-foreground: 339 60% 25%;  /* #651C32 - dark burgundy */
+    --primary: 39 63% 47%;              /* #C5912C - gold (primary buttons, titles) */
+    --primary-foreground: 35 43% 93%;   /* #F2EFE8 - cream */
 
     --secondary: 339 60% 25%;           /* #651C32 - dark burgundy */
     --secondary-foreground: 35 43% 93%; /* #F2EFE8 - cream */
 
-    --muted: 108 11% 51%;               /* #788E75 - muted green */
+    --muted: 351 73% 38%;               /* #A6192E - deep red (subtle elements) */
     --muted-foreground: 35 43% 93%;     /* #F2EFE8 - cream */
 
-    --accent: 349 73% 38%;              /* #A6192E - deep red */
+    --accent: 351 73% 38%;              /* #A6192E - deep red (CTAs, highlights) */
     --accent-foreground: 35 43% 93%;    /* #F2EFE8 - cream */
 
-    --destructive: 349 73% 38%;         /* #A6192E - deep red */
+    --destructive: 351 73% 38%;         /* #A6192E - deep red */
     --destructive-foreground: 35 43% 93%; /* #F2EFE8 - cream */
 
-    --border: 339 60% 25%;              /* #651C32 - dark burgundy */
+    --border: 39 63% 47%;               /* #C5912C - gold borders */
     --input: 339 60% 25%;               /* #651C32 - dark burgundy */
-    --ring: 39 63% 47%;                 /* #C5912C - gold */
+    --ring: 39 63% 47%;                 /* #C5912C - gold focus rings */
 
     --radius: 0.75rem;
 
-    /* Custom Luxury Pastry Theme Tokens */
-    --luxury-gold: 39 63% 47%;          /* #C5912C - gold */
-    --luxury-gold-muted: 39 63% 57%;    /* lighter gold */
-    --luxury-dark: 158 36% 18%;         /* #1D3C34 - deep forest green */
-    --luxury-dark-lighter: 339 60% 25%; /* #651C32 - dark burgundy */
-    --luxury-dark-lightest: 339 50% 30%; /* lighter burgundy */
-    --luxury-light: 35 43% 93%;         /* #F2EFE8 - cream */
-    --luxury-accent: 349 73% 38%;       /* #A6192E - deep red */
-    --luxury-pink: 351 45% 90%;         /* #F5DADF - light pink */
-    --luxury-green: 108 11% 51%;        /* #788E75 - muted green */
+    /* Curated Pastry Theme Tokens */
+    --luxury-gold: 39 63% 47%;          /* #C5912C - gold (headings, buttons) */
+    --luxury-gold-muted: 39 63% 57%;    /* lighter gold variant */
+    --luxury-dark: 158 36% 18%;         /* #1D3C34 - main background */
+    --luxury-dark-lighter: 339 60% 25%; /* #651C32 - card backgrounds */
+    --luxury-light: 35 43% 93%;         /* #F2EFE8 - main text */
+    --luxury-accent: 351 73% 38%;       /* #A6192E - accent red */
+    --luxury-pink: 351 45% 90%;         /* #F5DADF - soft pink touches */
     
-    /* Luxury Gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(39 63% 47% / 0.1), hsl(351 45% 90% / 0.05));
+    /* Elegant Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(158 36% 18%), hsl(339 60% 25%));
     --gradient-section: linear-gradient(180deg, hsl(339 60% 25%), hsl(158 36% 18%));
     --gradient-gold: linear-gradient(135deg, hsl(39 63% 47%), hsl(39 63% 57%));
+    --gradient-luxury: linear-gradient(135deg, hsl(39 63% 47% / 0.1), hsl(351 45% 90% / 0.05));
     
-    /* Luxury Shadows with Gold Glow */
+    /* Luxury Shadows */
     --shadow-luxury: 0 25px 50px -12px hsl(39 63% 47% / 0.3);
     --shadow-elegant: 0 20px 40px -12px hsl(0 0% 0% / 0.8);
     --shadow-card: 0 10px 30px -5px hsl(339 60% 25% / 0.5);
     --shadow-gold-glow: 0 0 30px hsl(39 63% 47% / 0.4);
     
-    /* Smooth Luxury Transitions */
+    /* Smooth Transitions */
     --transition-luxury: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    /* Luxury Animations */
-    --animation-luxury-float: luxury-float 6s ease-in-out infinite;
-    --animation-luxury-glow: luxury-glow 4s ease-in-out infinite alternate;
 
     --sidebar-background: 0 0% 98%;
 
